@@ -1,0 +1,24 @@
+/* src/App.css */
+.app {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .new-project-tag {
+    font-size: 14px;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  .content {
+    display: flex;
+    margin-top: 20px;
+  }
+  

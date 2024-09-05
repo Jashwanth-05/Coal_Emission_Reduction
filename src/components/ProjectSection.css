@@ -1,0 +1,27 @@
+/* src/components/ProjectSection.css */
+.project-section {
+  width: 200px;
+  height: 400px;
+  background-color: #E0BBFF;
+  padding: 20px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-icon {
+  background-color: #E0BBFF;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
