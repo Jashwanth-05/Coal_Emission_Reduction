@@ -4,7 +4,7 @@ const Inputbox = ({name,type,id}) => {
   return (
     <div>
         <label htmlFor={id}>{name}</label>
-        <input type={type} id={id}/>
+        <input type="text" id={id} placeholder={`Enter in ${type}`} />
     </div>
   )
 }
