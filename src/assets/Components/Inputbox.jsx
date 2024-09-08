@@ -1,10 +1,11 @@
 import React from 'react'
+import "../Styles/Inputbox.css"
 
 const Inputbox = ({name,type,id}) => {
   return (
-    <div>
+    <div className="inputbox-container">
         <label htmlFor={id}>{name}</label>
-        <input type="text" id={id} placeholder={`Enter in ${type}`} />
+        <input type={type} id={id}/>
     </div>
   )
 }

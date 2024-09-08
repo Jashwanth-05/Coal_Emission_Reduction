@@ -1,10 +1,11 @@
 import React from 'react'
-
-const Home = () => {
+import "../Styles/Home.css";
+const Home = ({goToProjects}) => {
   return (
-    <div>
+    <div className="home-container">
         <h1>Introduction to Our App</h1>
-        <button>Get Started</button>
+        <p>A web application specifically designed for Indian coal mines to quantify their carbon footprint and explore pathways to carbon neutrality.</p>
+        <button onClick={goToProjects}>Get Started</button>
     </div>
   )
 }

@@ -1,9 +1,10 @@
 import React from 'react'
+import "../Styles/Selectbox.css"
 
 const Selectbox = ({name, arr=[],handleSelect}) => {
   
   return (
-    <div>
+    <div className="selectbox-container">
           <label htmlFor={name}>{name}: </label>
           <select id={name} defaultValue="" onClick={handleSelect}>
           <option value="" disabled>Select {name}</option>

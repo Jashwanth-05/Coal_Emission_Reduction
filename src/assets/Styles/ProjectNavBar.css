@@ -1,0 +1,59 @@
+/* Sidebar Container */
+.sidebar-container {
+  top: 130px; /* Adjust this based on the height of your main Navbar */
+  left: 0;
+  width: 350px; /* Adjust width as needed */
+  height: 90vh;/* Adjust height to fit below the main Navbar */
+  background-color: #f4f4f4;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header Section */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-header input {
+  width: calc(100% - 40px); /* Adjust based on icon width */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.sidebar-header .MuiSvgIcon-root {
+  font-size: 2rem; /* Adjust icon size as needed */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.sidebar-header .MuiSvgIcon-root:hover {
+  color: #007bff;
+}
+
+/* Main Content */
+.sidebar-main {
+  flex-grow: 1;
+}
+
+.sidebar-main li{
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border: 1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 5px;
+}
+
+.sidebar-main li:hover{
+  background-color: gray;
+}

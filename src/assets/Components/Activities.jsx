@@ -2,8 +2,11 @@ import React, { useState } from 'react'
 import Selectbox from './Selectbox';
 import { useEffect } from 'react';
 import Inputbox from './Inputbox';
+import { useNavigate } from 'react-router-dom';
+import "../Styles/Form.css"
 
 const Activities = ({choice}) => {
+  const navigate = useNavigate();
     const [CurAct,SetCurAct]=useState([]);
     const [selectedActivity, setSelectedActivity] = useState('');
     const [equipment, setEquipment] = useState([]);
@@ -190,8 +193,12 @@ useEffect(() => {
     setEquipment(equipmentList);
 }, [selectedActivity, choice]);
 
+const goToProjects = () => {
+  navigate('/project');
+};
+
   return (
-    <div>
+    <div className="form-container">
         <label htmlFor="Activitybar">Activities</label>
         <select
                 id="activity-select"
@@ -228,7 +235,7 @@ useEffect(() => {
             {CoalInputs.map((item, index) => (
                             <Inputbox name={item} key={index} type={fueltype}/>
             ))}
-            <button>Submit</button>
+            <button onClick={goToProjects} >Submit</button>
       </div>
   )
 }
